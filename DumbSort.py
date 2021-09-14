@@ -14,7 +14,7 @@ while True:
         print "Input:\t" + array
         array = array.split(" ")
         array = [x for x in array if x.isdigit()] # remove any non numeric values
-        array.sort()
+        array.sort(key=int)
         print "Output:\t" + " ".join(array)
         break;
     
@@ -24,7 +24,7 @@ while True:
         print "Input:\t" + array
         array = array.split(" ")
         array = [x for x in array if not x.isdigit()] # remove any non string values
-        array.sort()
+        array.sort(key=str)
         print "Output:\t" + " ".join(array)
         break;
 
@@ -34,13 +34,13 @@ while True:
         strings = "orange apple grape strawberry blackberry"
         strings = strings.split(" ")
         strings = [x for x in strings if not x.isdigit()] # remove any non string values
-        strings.sort()
+        strings.sort(key=str)
         print "String Output:\t" + " ".join(strings)
         print "Integer Input:\t2 9 5 0 1 10 4 21 9 1"
         integers = "2 9 5 0 1 10 4 21 9 1"
         integers = integers.split(" ")
         integers = [x for x in integers if x.isdigit()] # remove any non numeric values
-        integers.sort()
+        integers.sort(key=int)
         print "Integer Output:\t" + " ".join(integers)
         break;
 
