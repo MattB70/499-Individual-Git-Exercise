@@ -11,8 +11,10 @@ while True:
     if input_type == "I" or input_type == "i":
         print "Integers selected"
         array = raw_input("Input integers seperated by spaces:\n")
-        print array
-
+        print "Input:\t" + array
+        array = array.split(" ")
+        array.sort()
+        print "Output:\t" + " ".join(array)
         break;
     
     if input_type == "S" or input_type == "s":
@@ -24,3 +26,4 @@ while True:
 
     else:
         print "Invalid input type. Try again.\n"
+
