@@ -28,6 +28,22 @@ while True:
         print "Output:\t" + " ".join(array)
         break;
 
+    if input_type == "T" or input_type == "t": # Test
+        print "Tests selected"
+        print "String Input:\torange apple grape strawberry blackberry"
+        strings = "orange apple grape strawberry blackberry"
+        strings = strings.split(" ")
+        strings = [x for x in strings if not x.isdigit()] # remove any non string values
+        strings.sort()
+        print "String Output:\t" + " ".join(strings)
+        print "Integer Input:\t2 9 5 0 1 10 4 21 9 1"
+        integers = "2 9 5 0 1 10 4 21 9 1"
+        integers = integers.split(" ")
+        integers = [x for x in integers if x.isdigit()] # remove any non numeric values
+        integers.sort()
+        print "Integer Output:\t" + " ".join(integers)
+        break;
+
     else:
         print "Invalid input type. Try again.\n"
 
