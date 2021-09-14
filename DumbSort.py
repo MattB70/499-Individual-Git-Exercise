@@ -13,6 +13,7 @@ while True:
         array = raw_input("Input integers seperated by spaces:\n")
         print "Input:\t" + array
         array = array.split(" ")
+        array = [x for x in array if x.isdigit()] # remove any non numeric values
         array.sort()
         print "Output:\t" + " ".join(array)
         break;
