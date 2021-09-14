@@ -44,6 +44,6 @@ while True:
         print "Integer Output:\t" + " ".join(integers)
         break;
 
-    else:
+    else: # User input invalid argument.
         print "Invalid input type. Try again.\n"
 
