@@ -11,16 +11,23 @@ while True:
     if input_type == "I" or input_type == "i":
         print "Integers selected"
         array = raw_input("Input integers seperated by spaces:\n")
-        print array
-
+        print "Input:\t" + array
+        array = array.split(" ")
+        array = [x for x in array if x.isdigit()] # remove any non numeric values
+        array.sort()
+        print "Output:\t" + " ".join(array)
         break;
     
     if input_type == "S" or input_type == "s":
         print "Strings selected"
         array = raw_input("Input strings seperated by spaces:\n")
-        print array
-
+        print "Input:\t" + array
+        array = array.split(" ")
+        array = [x for x in array if not x.isdigit()] # remove any non string values
+        array.sort()
+        print "Output:\t" + " ".join(array)
         break;
 
     else:
         print "Invalid input type. Try again.\n"
+
