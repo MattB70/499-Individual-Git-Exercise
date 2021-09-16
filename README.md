@@ -9,7 +9,7 @@ Python 2.7.15 or equivalent Python 2 version required.
 When prompted with:
 > Integers or Strings? (Ii/Ss):
 
-Input 'I' or 'i' to select Integers or 'S' or 's' to select Strings.
+Input 'I' or 'i' to select Integers, 'S' or 's' to select Strings or 'T' or 't' to select Test.
 
 ### Integers
 When prompted with:
