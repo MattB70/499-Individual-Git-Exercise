@@ -11,7 +11,7 @@ When prompted with:
 
 Input 'I' or 'i' to select Integers or 'S' or 's' to select Strings.
 
-#### Integers
+### Integers
 When prompted with:
 > Input integers seperated by spaces:
 
@@ -21,7 +21,7 @@ Example:
 
 Any non integer values will be removed before sorting.
 
-#### Strings
+### Strings
 When prompted with:
 > Input strings seperated by spaces:
 
