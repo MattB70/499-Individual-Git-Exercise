@@ -3,6 +3,8 @@ COSC 499 Individual Git Exercise
 Matthew Borle
 September 14, 2021
 
+Video: https://youtu.be/N39LkvoX5lw
+
 ## Usage
 Python 2.7.15 or equivalent Python 2 version required.
 
